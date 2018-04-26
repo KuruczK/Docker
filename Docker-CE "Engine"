@@ -1,5 +1,6 @@
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
  
+#! /bin/bash
 sudo apt-get remove docker docker-engine docker.io                                      ---- régi Docker verzió eltávolítása
 sudo apt-get update
 sudo apt-get install \
