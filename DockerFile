@@ -1,5 +1,8 @@
-FROM nginx:latest
- RUN rm /usr/share/nginx/html/*
- COPY web /usr/share/nginx/html
- Expose 80 443
- cmd ["nginx", "-g", "daemon off;"]
+#! /bin/bash
+cd ..
+echo Dockerfile >\
+'FROM nginx:latest
+  RUN rm /usr/share/nginx/html/*
+  COPY web /usr/share/nginx/html
+  Expose 80 443
+  cmd ["nginx", "-g", "daemon off;"]'
