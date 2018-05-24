@@ -2,7 +2,7 @@
 cd .. 
 mkdir web
 cd web
-touch index.html
+echo -e 'hello' > index.html
 cd ..
 
 sudo docker build -t docker-nginx .
