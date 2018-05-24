@@ -1,0 +1,5 @@
+FROM nginx:latest
+ RUN rm /usr/share/nginx/html/*
+ COPY web /usr/share/nginx/html
+ Expose 80 443
+ cmd ["nginx", "-g", "daemon off;"]
