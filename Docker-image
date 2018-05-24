@@ -1,0 +1,9 @@
+#! /bin/bash
+cd .. 
+mkdir web
+cd web
+touch index.html
+cd ..
+
+sudo docker build -t docker-nginx .
+sudo docker ps -a
