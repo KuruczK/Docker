@@ -1,3 +1,3 @@
 #! /bin/bash
 cd ..
-echo -e 'FROM nginx:latest\n RUN rm /usr/share/nginx/html/*\n COPY web /usr/share/nginx/html\n Expose 80 443\n cmd ["nginx", "-g", "daemon off;"]' >Dockerfile.sh
+echo -e 'FROM nginx:latest\n RUN rm /usr/share/nginx/html/*\n COPY web /usr/share/nginx/html\n Expose 80 443\n cmd ["nginx", "-g", "daemon off;"]' >Dockerfile
