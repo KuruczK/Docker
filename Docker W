@@ -19,7 +19,6 @@ sudo apt-get install docker-ce
 cd ..
 echo -e 'FROM nginx:latest\n RUN rm /usr/share/nginx/html/*\n COPY web /usr/share/nginx/html\n Expose 80 443\n cmd ["nginx", "-g", "daemon off;"]' >Dockerfile
 
-cd .. 
 mkdir web
 cd web
 echo -e 'hello' > index.html
