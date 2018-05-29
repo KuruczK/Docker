@@ -28,4 +28,4 @@ sudo docker build -t new .
 sudo adduser ubuntu docker
 uname -r
 sudo apt-get update -y
-sudo docker run -d --name docker-nginx -p 80:80 new
+sudo docker run -d --name webszerver -p 80:80 new
