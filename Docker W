@@ -21,7 +21,7 @@ echo -e 'FROM nginx:latest\n RUN rm /usr/share/nginx/html/*\n COPY web /usr/shar
 
 mkdir web
 cd web
-echo -e 'hello' > index.html
+echo -e 'Vizsga 2018' > index.html
 cd ..
 sudo docker build -t new .
 
